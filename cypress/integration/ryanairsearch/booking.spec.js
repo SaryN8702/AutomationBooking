@@ -20,7 +20,6 @@ describe('Search and book', function(){
         cy.get('[data-ref="flight-search-widget__cta"]').click({force: true})
   
     })
-
     it('Edit data', function(){
         cy.visit('https://www.ryanair.com/gb/en/trip/flights/select?adults=2&teens=0&children=1&infants=0&dateOut=2020-12-06&dateIn=2021-01-02&isConnectedFlight=false&isReturn=true&discount=0&promoCode=&originIata=LIS&destinationIata=BVA&tpAdults=2&tpTeens=0&tpChildren=1&tpInfants=0&tpStartDate=2020-12-06&tpEndDate=2021-01-02&tpDiscount=0&tpPromoCode=&tpOriginIata=LIS&tpDestinationIata=BVA"')
         cy.get('.ng-tns-c35-10').find('.carousel-next').click({force: true})
