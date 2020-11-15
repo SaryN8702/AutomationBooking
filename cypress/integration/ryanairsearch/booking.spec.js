@@ -29,15 +29,9 @@ describe('Search and book', function(){
         cy.get('.ng-tns-c35-13').find('.carousel-next').click({force: true})
         cy.get('[data-ref="2021-01-05"]').click({force: true}) 
         cy.get('.ng-tns-c33-12').find('.card-header').click({force: true}).wait(300)
-        //cy.get('.fare-card-container').within(()=>{
-            //cy.get('.fare-card-item__component').contains('Regular').click({force: true})
-            //cy.get('.fare-confirmation__button--yes').click().wait(200)
-            //cy.get('.login-touchpoint__login-later').click({force: true})
-            //cy.get(':nth-child(2)').find('.dropdown__toggle').click({force: true})
-            //cy.get('.name').type('Sónia')
-            //cy.get('.surname').type('Pereira')
-            
-           //})
+        cy.get('.fare-card--selected').click({force: true})
+        
+       
      
     })
     
