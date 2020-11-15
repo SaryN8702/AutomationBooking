@@ -7,7 +7,7 @@ describe('Search and book', function(){
 
     it('Search a trip and book it', function(){
         cy.get('#input-button__departure').clear().type('lisbon').wait(300)
-        cy.get('.tooltip-inner').contains('Portugal').click()
+        cy.get('.tooltip-inner').contains('Portugal').click() 
         cy.get('.airports__airports-list').contains('Lisbon').click()   
         cy.get('#input-button__destination').type('Paris').wait(300)  
         cy.get('.airports__airports-list').contains('Paris Beauvais').click()
